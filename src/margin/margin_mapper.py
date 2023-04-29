@@ -8,4 +8,6 @@ class MarginMapper():
     def map_row(self, client, row):
         output = {}
         output['marginAmount'] = 1.23
+        output['client'] = client['clientNumber']
+        output['productCd'] = row['Product Code']
         return output
