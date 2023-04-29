@@ -12,7 +12,7 @@ class MarginProcessor():
         data = []
         for row_number, row in input_df.iterrows():
             client = self.margin_lookup_obj.get_client(row)
+            row = self.margin_mapper_obj.map_row(client, row)
             row['sequence_number'] = row_number
-            row['clientNumber'] = client['clientNumber']
             data.append(row)
         return pd.DataFrame(data)

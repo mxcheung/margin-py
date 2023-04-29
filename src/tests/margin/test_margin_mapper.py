@@ -13,7 +13,7 @@ class TestMarginMapper(unittest.TestCase):
         client = TestUtils.client()
         actual = self.obj.map_row(client,row)
         self.assertEqual(1.23, actual['marginAmount'])  # add assertion here
-        self.assertEqual(1234, actual['client'])  # add as
+        self.assertEqual(1234, actual['clientNumber'])  # add as
         self.assertEqual('BHP', actual['productCd'])  # add as
 
 

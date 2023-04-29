@@ -15,7 +15,6 @@ class TestUtils:
         data = []
         output = {}
         output['Member Code'] = 1234
+        output['Product Code'] = 'BHP'
         data.append(output)
         return pd.DataFrame(data)
-
-        return {'Product Code': 'BHP'}
